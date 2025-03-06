@@ -10,4 +10,18 @@
         <! Draw an image from  https://highres.factumfoundation.xyz/iiif/image/ceramics-albedo/10752,3584,259,512/259,512/0 default size is 512x512 >
         <img src="https://highres.factumfoundation.xyz/iiif/image/plantin-moretus-mpm-3899-1-albedo/1024,512,512,512/512,512/0/default.png" alt="Plantin" width="512" height="512">
     </div>    
+
+    <! read a json from https://highres.factumfoundation.xyz/iiif/manifest/ceramics.json and render it inside a div >
+    <div id="json"></div>
+    
+</body>
+    <script>
+        fetch('https://highres.factumfoundation.xyz/iiif/manifest/ceramics.json')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById('json').innerHTML = JSON.stringify(data, null, 2);
+            })
+            .catch(error => console.error('Error fetching the JSON file:', error));
+    </script>
 </html>
