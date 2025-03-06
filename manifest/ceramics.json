@@ -1,0 +1,254 @@
+{
+    "@context": [
+        "http://iiif.io/api/presentation/3/context.json",
+        "https://highres.factumfoundation.xyz/contexts/lightingmap/context/json"
+    ],
+    "id": "https://highres.factumfoundation.xyz/iiif/manifest/ceramics.json",
+    "type": "Manifest",
+	"label": {
+        "en": ["Ceramics Collection Manifest"]
+    },
+    "summary": {
+        "en": [
+            "A IIIF manifest for ceramics images"
+        ]
+    },
+    "metadata": [
+        {
+            "label": {
+                "en": [
+                    "Title"
+                ]
+            },
+            "value": {
+                "en": [
+                    "Ceramic from Collection Instituto Valencia de Don Juan"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Description"
+                ]
+            },
+            "value": {
+                "en": [
+                    "1-3909"
+                ]
+            }
+        },
+        {
+            "label": {
+                "en": [
+                    "Date"
+                ]
+            },
+            "value": {
+                "en": [
+                    "2025"
+                ]
+            }
+        }
+    ],
+    "homepage": [
+        {
+            "id": "https://highres.factumfoundation.xyz/objects/ceramics",
+            "type": "Text",
+            "label": {
+                "en": [
+                    "Ceramics Collection"
+                ]
+            },
+            "format": "text/html",
+            "language": [
+                "en"
+            ]
+        }
+    ],
+    "provider": [
+        {
+            "id": "https://factumfoundation.org/",
+            "type": "Agent",
+            "label": {
+                "en": [
+                    "Factum Foundation"
+                ]
+            },
+            "format": "text/html",
+			"logo": [
+				{
+					"id": "https://highres.factumfoundation.xyz/iiif/image/example-logo/full/256,/0/default.jpg",
+					"type": "Image",
+					"service": 
+					[
+						{ "@id": "https://highres.factumfoundation.xyz/iiif/image/example-logo", "@type": "ImageService2", "profile": "http://iiif.io/api/image/2/level1.json" },
+						{ "id": "https://highres.factumfoundation.xyz/iiif/image/example-logo", "type": "ImageService3", "profile": "level1" }
+					]
+				}
+			]
+        }
+    ],
+    "thumbnail": [
+        {
+            "id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-thumb/full/256,/0/default.jpg",
+            "type": "Image",
+            "service": [
+                {
+                    "@id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-thumb",
+                    "@type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level1.json"
+                },
+                {
+                    "id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-thumb",
+                    "type": "ImageService3",
+                    "profile": "level1"
+                }
+            ]
+        }
+    ],
+    "requiredStatement":
+        {
+            "label": {
+                "en": [
+                    "Terms of Use"
+                ]
+            },
+            "value": {
+                "en": [
+                    "<span>Terms of Use</span>"
+                ]
+            }
+        }
+    ,
+    "partOf": [
+        {
+            "id": "https://highres.factumfoundation.xyz/iiif/collection/collections",
+            "type": "Collection",
+            "label": {
+                "en": [
+                    "Instituto Valencia de Don Juan"
+                ]
+            }
+        }
+    ],
+    "behavior": [
+        "paged"
+    ],
+    "items": [
+        {
+            "id": "https://highres.factumfoundation.xyz/iiif/canvas/ceramics.json",
+            "type": "Canvas",
+            "label": {
+                "en": [
+                    "Main view of ceramics"
+                ]
+            },
+            "width": 11011,
+            "height": 11081,
+            "items": [
+                {
+                    "id": "https://highres.factumfoundation.xyz/iiif/annotationpage/ceramics.json",
+                    "type": "AnnotationPage",
+					
+                    "items": [
+                        {
+                            "id": "https://highres.factumfoundation.xyz/iiif/annotation/ceramics.json",
+                            "type": "Annotation",
+							"motivation": "painting",
+                            "target": "https://highres.factumfoundation.xyz/iiif/canvas/ceramics.json",
+                            "body": {
+                                "type": "Choice",
+                                "items": [
+                                    {
+                                        "id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-albedo/full/max/0/default.png",
+                                        "type": "Image",
+                                        "format": "image/png",
+                                        "label": {
+                                            "en": [
+                                                "Main view of ceramics"
+                                            ]
+                                        },
+                                        "width": 11011,
+                                        "height": 11081,
+                                        "service": [
+                                            {
+                                                "@id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-albedo",
+                                                "@type": "ImageService2",
+                                                "profile": "http://iiif.io/api/image/2/level1.json"
+                                            },
+                                            {
+                                                "id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-albedo",
+                                                "type": "ImageService3",
+                                                "profile": "level1"
+                                            },
+                                            {
+                                                "id": "https://highres.factumfoundation.xyz/iiif/image/lightingmap/ceramics-albedo.json",
+                                                "type": "LightingMapExtension",
+                                                "profile": "http://iiif.io/api/extension/lightingmap",
+                                                "mapType": "albedo"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-normal/full/max/0/default.png",
+                                        "type": "Image",
+                                        "format": "image/png",
+                                        "label": {
+                                            "en": [
+                                                "Main view of ceramics"
+                                            ]
+                                        },
+                                        "width": 11011,
+                                        "height": 11081,
+                                        "service": [
+                                            {
+                                                "@id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-normal",
+                                                "@type": "ImageService2",
+                                                "profile": "http://iiif.io/api/image/2/level1.json"
+                                            },
+                                            {
+                                                "id": "https://highres.factumfoundation.xyz/iiif/image/ceramics-normal",
+                                                "type": "ImageService3",
+                                                "profile": "level1"
+                                            },
+                                            {
+                                                "id": "https://highres.factumfoundation.xyz/iiif/image/lightingmap/ceramics-normal.json",
+                                                "type": "LightingMapExtension",
+                                                "profile": "http://iiif.io/api/extension/lightingmap",
+                                                "mapType": "normal"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+                
+            ]
+        }
+    ],
+    "structures": [
+        {
+            "id": "https://highres.factumfoundation.xyz/iiif/range/ceramics/1",
+            "type": "Range",
+            "label": {
+                "en": [
+                    "Ceramics Collection"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://highres.factumfoundation.xyz/iiif/canvas/ceramics.json",
+                    "type": "Canvas"
+                }
+            ],
+            "start": {
+                "id": "https://highres.factumfoundation.xyz/iiif/canvas/ceramics.json",
+                "type": "Canvas"
+            }
+        }
+    ],
+    "viewingDirection": "left-to-right"
+}
